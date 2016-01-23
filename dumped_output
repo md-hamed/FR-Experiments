@@ -1,0 +1,42 @@
+
+** Training Data used as test/validation data **
+
+(5985, 40000)
+Training mini-batch number 0
+Training mini-batch number 1000
+Epoch 0: validation accuracy 9.92%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 9.92%
+Training mini-batch number 2000
+Training mini-batch number 3000
+Epoch 1: validation accuracy 12.61%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 12.61%
+Training mini-batch number 4000
+Training mini-batch number 5000
+Epoch 2: validation accuracy 16.29%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 16.29%
+Training mini-batch number 6000
+Training mini-batch number 7000
+Epoch 3: validation accuracy 26.08%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 26.08%
+Training mini-batch number 8000
+Training mini-batch number 9000
+Epoch 4: validation accuracy 32.23%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 32.23%
+Training mini-batch number 10000
+Training mini-batch number 11000
+Epoch 5: validation accuracy 40.37%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 40.37%
+Training mini-batch number 12000
+Training mini-batch number 13000
+Epoch 6: validation accuracy 50.88%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 50.88%
+Training mini-batch number 14000
+Training mini-batch number 15000
+
