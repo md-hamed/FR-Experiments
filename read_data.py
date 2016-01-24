@@ -21,14 +21,14 @@ def read_data_sets():
   images, labels = extract_images()
   print(images.shape)
 
-  train_images = images[:4500]
-  train_labels = labels[:4500]
+  train_images = images[:4000]
+  train_labels = labels[:4000]
 
-  test_images = images[4500:5500]
-  test_labels = labels[4500:5500]
+  test_images = images[4000:5000]
+  test_labels = labels[4000:5000]
 
-  validation_images = images[5500:5900]
-  validation_labels = labels[5500:5900]
+  validation_images = images[5000:5900]
+  validation_labels = labels[5000:5900]
 
   training_data = (train_images, train_labels)
   validation_data = (validation_images, validation_labels)

@@ -1,6 +1,66 @@
+** In all experiments: filter size = 5x5
 
 ** Training Data used as test/validation data **
 
+(1) 2 conv layers - 2 fully connected - 1 softmax
+GPU
+2016-01-24 01:27:57,957 Loading LFW people faces from /home/hamid/Desktop/FooFoo/lfw_home
+(5985, 40000)
+Training mini-batch number 0
+Training mini-batch number 1000
+Epoch 0: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 9.11%
+Training mini-batch number 2000
+Epoch 1: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 9.11%
+Training mini-batch number 3000
+...
+..
+.
+
+(2) 1 conv layer - 1 fully connected - 1 softmax
+
+GPU
+2016-01-23 20:04:21,678 Loading LFW people faces from /home/hamid/Desktop/FooFoo/lfw_home
+(5985, 40000)
+Training mini-batch number 0
+Training mini-batch number 1000
+Epoch 0: validation accuracy 0.25%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 0.00%
+Training mini-batch number 2000
+Epoch 1: validation accuracy 10.03%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 9.71%
+Training mini-batch number 3000
+Training mini-batch number 4000
+Epoch 2: validation accuracy 9.77%
+Training mini-batch number 5000
+Epoch 3: validation accuracy 9.77%
+Training mini-batch number 6000
+Training mini-batch number 7000
+Epoch 4: validation accuracy 9.77%
+Training mini-batch number 8000
+Epoch 5: validation accuracy 9.52%
+Training mini-batch number 9000
+Training mini-batch number 10000
+Epoch 6: validation accuracy 9.52%
+Training mini-batch number 11000
+Epoch 7: validation accuracy 9.52%
+Training mini-batch number 12000
+Training mini-batch number 13000
+Epoch 8: validation accuracy 9.52%
+Training mini-batch number 14000
+Epoch 9: validation accuracy 9.52%
+Finished training network.
+Best validation accuracy of 10.03% obtained at iteration 2999
+Corresponding test accuracy of 9.71%
+
+** Test/validation data is exactly the same as training data (Training accuracies)
+
+(3) 2 conv layers - 2 fully connected - 1 softmax
 (5985, 40000)
 Training mini-batch number 0
 Training mini-batch number 1000
