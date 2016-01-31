@@ -15,6 +15,7 @@ def extract_images():
     lfw_people_images = lfw_people.images
     print(lfw_people_images.shape)
     lfw_people_images_resized = numpy.resize(lfw_people_images,(lfw_people_images.shape[0], 40000, 3, ))
+
     lfw_people_target_ids = lfw_people.target
     return (lfw_people_images_resized, lfw_people_target_ids)
 
