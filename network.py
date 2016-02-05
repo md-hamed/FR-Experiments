@@ -163,7 +163,7 @@ class ConvPoolLayer(object):
         of filters, the number of input feature maps, the filter height, and the
         filter width.
 
-        `image_shape` is a tuple of length 4, whose entries are the
+        `   ` is a tuple of length 4, whose entries are the
         mini-batch size, the number of input feature maps, the image
         height, and the image width.
 

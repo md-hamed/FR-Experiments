@@ -8,11 +8,11 @@ training_data, validation_data, test_data = network.load_data_shared();
 mini_batch_size = 3
 
 net = Network([
-      ConvPoolLayer(image_shape=(mini_batch_size, 1, 200, 200), # -> 24x24 -> 12x12 
-                    filter_shape=(20, 1, 5, 5), 
+      ConvPoolLayer(image_shape=(mini_batch_size, 3, 200, 200),
+                    filter_shape=(20, 3, 5, 5), 
                     poolsize=(2, 2), 
                     activation_fn=ReLU),
-      ConvPoolLayer(image_shape=(mini_batch_size, 20, 98, 98), # -> 8x8 -> 4x4
+      ConvPoolLayer(image_shape=(mini_batch_size, 20, 98, 98),
                     filter_shape=(40, 20, 5, 5), 
                     poolsize=(2, 2), 
                     activation_fn=ReLU),
