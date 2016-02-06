@@ -100,3 +100,53 @@ The corresponding test accuracy is 50.88%
 Training mini-batch number 14000
 Training mini-batch number 15000
 
+(4) RGB: 2 conv layers - 2 fully connected - 1 softmax
+
+Training mini-batch number 0
+Training mini-batch number 1000
+Epoch 0: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Training mini-batch number 2000
+Epoch 1: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Training mini-batch number 3000
+Training mini-batch number 4000
+Epoch 2: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Training mini-batch number 5000
+Epoch 3: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Training mini-batch number 6000
+Training mini-batch number 7000
+Epoch 4: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Training mini-batch number 8000
+Epoch 5: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Training mini-batch number 9000
+Training mini-batch number 10000
+Epoch 6: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Training mini-batch number 11000
+Epoch 7: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Training mini-batch number 12000
+Training mini-batch number 13000
+Epoch 8: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Training mini-batch number 14000
+Epoch 9: validation accuracy 10.22%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 8.28%
+Finished training network.
+Best validation accuracy of 10.22% obtained at iteration 14959
+Corresponding test accuracy of 8.28%
