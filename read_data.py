@@ -1,20 +1,17 @@
 import numpy as np
 import logging
-
 from os import listdir, makedirs, remove
 from os.path import join, exists, isdir
+from base import get_data_home, Bunch
+from six import b
+from sklearn.cross_validation import train_test_split
 
 try:
     import urllib.request as urllib  # for backwards compatibility
 except ImportError:
     import urllib
 
-from base import get_data_home, Bunch
-
-from six import b
-
 logger = logging.getLogger(__name__)
-
 
 n_classes = 0
 
@@ -275,25 +272,19 @@ def extract_images():
     target_names = lfw_people.target_names
     global n_classes
     n_classes = target_names.shape[0]
-    lfw_people_images = lfw_people.images
-    print(lfw_people_images.shape)
-    lfw_people_images_resized = np.resize(lfw_people_images,(lfw_people_images.shape[0], 120000, ))
-    print(lfw_people_images_resized.shape)
+    lfw_people_images = lfw_people.data
+    # lfw_people_images_resized = np.resize(lfw_people_images,(lfw_people_images.shape[0], 120000, ))
 
     lfw_people_target_ids = lfw_people.target
-    print(lfw_people_target_ids)
-    return (lfw_people_images_resized, lfw_people_target_ids)
+    return (lfw_people_images, lfw_people_target_ids)
 
 def read_data_sets():
   images, labels = extract_images()
-  print(images.shape)
+  train_images, test_images, train_labels, test_labels = train_test_split(
+    images, labels, test_size=0.25, random_state=42)
+  print("Dataset splitted into train/test.")
 
-  train_images = images[:4000]
-  train_labels = labels[:4000]
-
-  test_images = images[4000:5000]
-  test_labels = labels[4000:5000]
-
+  #using 1k images of the same dataset of train/test for time being
   validation_images = images[5000:5900]
   validation_labels = labels[5000:5900]
 
